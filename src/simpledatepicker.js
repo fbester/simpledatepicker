@@ -10,7 +10,7 @@
 */
 
 if( typeof SimpleDatePicker === "undefined"){
-    var SimpleDatepicker = function(id, options){
+    var SimpleDatePicker = function(id, options){
         var name = 'Simple Datepicker'
 
         var el = null
