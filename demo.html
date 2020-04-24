@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Date Picker Demo</title>
+    <script src='src/simpledatepicker.js'></script>
+    <link rel="stylesheet" href='src/simpledatepicker.css'>
+    <style>
+        .wrapper {
+            margin-top:10em;
+            text-align:center;
+        }
+
+        .simpledatepicker {
+            width:25%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class='wrapper'>
+        <h1>Simple Date Picker Demo</h1>
+        <input id='pickadate' type='text' placeholder='Choose a date'>
+    </div>
+    <script>
+        var dp = new SimpleDatepicker('pickadate', {
+            'format': 'YYYY/mm/dd',
+            'delimiter': '/'
+        })
+    </script>
+</body>
+</html>
