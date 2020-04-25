@@ -305,6 +305,7 @@ if( typeof SimpleDatePicker === "undefined"){
         var gotoNextYear = function(e){
             if(e){ e.stopPropagation(); e.preventDefault() }
 
+            selectedDay = null
             selectedYear += 1
             selectedYearText.innerText = selectedYear
 
@@ -316,6 +317,7 @@ if( typeof SimpleDatePicker === "undefined"){
         var gotoPrevYear = function(e){
             if(e){ e.stopPropagation(); e.preventDefault() }
             
+            selectedDay = null
             selectedYear -= 1
             selectedYearText.innerText = selectedYear
 
